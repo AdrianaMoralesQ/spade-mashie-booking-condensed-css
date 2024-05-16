@@ -1,0 +1,206 @@
+/* Place any CSS overrides in this file. */
+
+@font-face {
+	font-family: "tf-gaelicregular";
+	src:
+		url("tf-gaelic-webfont.woff2") format("woff2"),
+		url("tf-gaelic-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Font size variables */
+:root {
+	--font-size-h2: 2.25rem;
+	--font-size-h2-desktop: calc(var(--font-size-h2) + 1.390625vw);
+	--font-size-h2-smaller: 1.5rem;
+	--font-size-h2-smaller-desktop: calc(var(--font-size-h2-smaller) + .890625vw);
+}
+
+/* Padding variables */
+
+:root {
+	--mobile-padding-x: 25px;
+}
+
+/* Custom typography settings */
+.custom-font,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.header-font,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.product-grid--title.product-grid--title-font-heading {
+	font-family: "tf-gaelicregular", sans-serif;
+	letter-spacing: .125rem;
+}
+
+h2 {
+	font-size: var(--font-size-h2);
+	line-height: 1.1;
+}
+
+h3 {
+	line-height: 1.1;
+}
+
+/* collection--featured-collection.liquid */
+.off-paper--collection--featured-collection div.product-grid--title.product-grid--title-font-heading {
+	font-size: var(--font-size-h2-smaller);
+	font-family: "tf-gaelicregular", sans-serif;
+}
+
+.off-paper--collection--featured-collection .product-grid--title-font-heading {
+	line-height: 1.3;
+}
+
+.off-paper--collection--featured-collection a {
+	color: #242424;
+}
+
+.off-paper--collection--featured-collection .grid-view-item {
+	margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+	.off-paper--collection--featured-collection .product-description {
+		min-height: 175px;
+		max-width: 500px;
+		align-self: center;
+	}
+
+	.off-paper--collection--featured-collection product-card {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.off-paper--collection--featured-collection .grid__item:first-child {
+		margin-bottom: 40px !important;
+	}
+	.off-paper--collection--featured-collection .grid-view-item-image {
+		margin-bottom: 25px !important;
+	}
+}
+
+/* Headings - store-information--map.liquid  */
+.homepage-map-content-box-inner h2 {
+	font-size: var(--font-size-h2-smaller);
+}
+
+/* Mailchimp styling */
+#mc_embed_signup .button {
+	background-color: #f3c811;
+}
+
+/* Password page */
+.password--container {
+	background-image: url("https://cdn.shopify.com/s/files/1/0679/6132/3757/files/SM_Landing_Page_Bkg_Image.jpg?v=1705521194") !important;
+	background-repeat: no-repeat !important;
+	background-position-x: center !important;
+}
+
+/* image--slideshow.liquid */
+.image--slideshow__navigation .dots {
+	display: flex;
+	justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+	h2 {
+		font-size: var(--font-size-h2-desktop);
+	}
+
+	/* Headings - store-information--map.liquid  */
+	div.product-grid--title.product-grid--title-font-heading, .homepage-map-content-box-inner h2 {
+		font-size: var(--font-size-h2-smaller-desktop);
+	}
+
+	h2, .homepage-sections--title.homepage-section-title {
+		line-height: normal !important;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	/* Custom mobile padding - utility class */
+	.wrapper-padded {
+		padding-left: var(--mobile-padding-x) !important;
+		padding-right: var(--mobile-padding-x) !important;
+	}
+}
+
+/* Global mobile img height classes - utility classes */
+
+/* Mobile */
+@media (max-width: 767px) {
+	.global--mobile-height-small {
+		height: 300px;
+	}
+
+	.global--mobile-height-medium {
+		height: 400px;
+	}
+
+	.global--mobile-height-large {
+		height: 500px;
+	}
+
+	.global--mobile-height-extra_large {
+		height: 600px;
+	}
+
+	.global--mobile-height-full_screen {
+		height: 100vh;
+	}
+
+	.section-rich-text .wrapper-padded {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+	}
+
+	.section-rich-text {
+		display: flex;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	/* Enables rows on desktop for text--rich-text.liquid */
+	.off-paper--rich-text {
+		display: flex;
+		gap: 15%;
+	}
+}
+
+/* Avoid logo shrinking in footer for tablet sizes*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	img.footer-image.js {
+		padding: 0px !important;
+		margin-right: 2rem;
+	}
+}
+@media only screen and (max-width: 767px) {
+	/*Footer logo: fix vertical spacing mobile  */
+	img.footer-image.js {
+		margin-left: 1.5rem;
+	}
+	/* Remove padding on mp4 video for mobile */
+	.homepage-hero-content--video.grid__item.large--three-quarters.no-text.type-mp4 {
+		padding-left: 0px;
+	}
+	
+	/* Remove padding on youtube video for mobile */
+	.grid__item.type-youtube {
+	  padding-left: 0 !important;
+	}
+}
+

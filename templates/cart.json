@@ -1,0 +1,1 @@
+{"sections":{"main":{"type":"template--cart","custom_css":[".cart__row .cart__row--title,table * {color: #000; border-color: #000;}",".grid.cart__row {border-color: #000;}",".wrapper-padded {max-width: none;}"],"settings":{"colors":"light","padding_top":15,"padding_bottom":25}}},"order":["main"]}
