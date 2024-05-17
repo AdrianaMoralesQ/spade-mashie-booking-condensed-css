@@ -581,22 +581,3 @@ a:nth-child(100n) .product-medias__thumbnail__image {
 		font: size 28px !important;
 	}
 }
-
-.info-cols--link_text {
-	border-radius: var(--alt-btn-border-radius) !important;
-	font-weight: var(--alt-btn-font-weight) !important;
-	font-style: var(--alt-btn-font-style) !important;
-	font-family: var(--body-font-stack) !important;
-	background: var(--primary-btn-bg-color) !important;
-	color: var(--primary-btn-text-color) !important;
-	transition: all 0.15s ease-in-out 0s !important;
-	display: inline-block !important;
-	padding: 10px 35px !important;
-	text-transform: var(--button-text-case);
-	letter-spacing: var(--button-text-spacing-px);
-	font-size: var(--button-font-size-px);
-	cursor: pointer;
-	pointer-events: auto;
-	border: 0;
-}
-

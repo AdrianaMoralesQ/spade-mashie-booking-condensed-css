@@ -28,13 +28,16 @@
 	.money.price-line-through:not(.sale-price) {
 	opacity: 0.5;
 }
+
 @media screen and (max-width: 767px) {
 	.show-view-all--button {
 		margin-top: 20px;
 	}
+	/* OFF-PAPER changes to mobile display */
 	.product-description {
 		font-size: 14px;
 	}
+	/* OFF-PAPER changes to mobile display */
 	.homepage-product-grid-wrapper {
 		display: grid;
 		grid-template-columns: 1fr;
@@ -45,6 +48,7 @@
 	.grid__item.large--one-third.medium--one-half.small--one-whole {
 		width: 80%;
 	}
+	/* OFF-PAPER changes - justified text */
 	.product-description {
 		text-align: justify;
 	}

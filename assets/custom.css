@@ -14,7 +14,9 @@
 	--font-size-h2: 2.25rem;
 	--font-size-h2-desktop: calc(var(--font-size-h2) + 1.390625vw);
 	--font-size-h2-smaller: 1.5rem;
-	--font-size-h2-smaller-desktop: calc(var(--font-size-h2-smaller) + .890625vw);
+	--font-size-h2-smaller-desktop: calc(
+		var(--font-size-h2-smaller) + 0.890625vw
+	);
 }
 
 /* Padding variables */
@@ -40,7 +42,7 @@ h5,
 h6,
 .product-grid--title.product-grid--title-font-heading {
 	font-family: "tf-gaelicregular", sans-serif;
-	letter-spacing: .125rem;
+	letter-spacing: 0.125rem;
 }
 
 h2 {
@@ -53,7 +55,8 @@ h3 {
 }
 
 /* collection--featured-collection.liquid */
-.off-paper--collection--featured-collection div.product-grid--title.product-grid--title-font-heading {
+.off-paper--collection--featured-collection
+	div.product-grid--title.product-grid--title-font-heading {
 	font-size: var(--font-size-h2-smaller);
 	font-family: "tf-gaelicregular", sans-serif;
 }
@@ -121,11 +124,13 @@ h3 {
 	}
 
 	/* Headings - store-information--map.liquid  */
-	div.product-grid--title.product-grid--title-font-heading, .homepage-map-content-box-inner h2 {
+	div.product-grid--title.product-grid--title-font-heading,
+	.homepage-map-content-box-inner h2 {
 		font-size: var(--font-size-h2-smaller-desktop);
 	}
 
-	h2, .homepage-sections--title.homepage-section-title {
+	h2,
+	.homepage-sections--title.homepage-section-title {
 		line-height: normal !important;
 	}
 }
@@ -163,9 +168,9 @@ h3 {
 	}
 
 	.section-rich-text .wrapper-padded {
-	display: flex;
-    flex-direction: column;
-    justify-content: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
 
 	.section-rich-text {
@@ -197,10 +202,27 @@ h3 {
 	.homepage-hero-content--video.grid__item.large--three-quarters.no-text.type-mp4 {
 		padding-left: 0px;
 	}
-	
+
 	/* Remove padding on youtube video for mobile */
 	.grid__item.type-youtube {
-	  padding-left: 0 !important;
+		padding-left: 0 !important;
 	}
 }
-
+/* product section-product-info-columns.liquid */
+.off-paper .info-cols--link_text {
+	border-radius: var(--alt-btn-border-radius) !important;
+	font-weight: var(--alt-btn-font-weight) !important;
+	font-style: var(--alt-btn-font-style) !important;
+	font-family: var(--body-font-stack) !important;
+	background: var(--primary-btn-bg-color) !important;
+	color: var(--primary-btn-text-color) !important;
+	transition: all 0.15s ease-in-out 0s !important;
+	display: inline-block !important;
+	padding: 10px 35px !important;
+	text-transform: var(--button-text-case);
+	letter-spacing: var(--button-text-spacing-px);
+	font-size: var(--button-font-size-px);
+	cursor: pointer;
+	pointer-events: auto;
+	border: 0;
+}
